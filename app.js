@@ -9,9 +9,11 @@ class Splitter {
   }
 
   splitCost() {
-    const finalValue =
-      this.cost.value / this.qty_persons.value + Number(this.tip.value);
-    this.final_cost.innerHTML = `${finalValue.toFixed(1)}`;
+    if (this.cost.value && this.qty_persons.value) {
+      const finalValue =
+        this.cost.value / this.qty_persons.value + Number(this.tip.value);
+      this.final_cost.innerHTML = `${finalValue.toFixed(1)}`;
+    }
   }
 
   reset() {
