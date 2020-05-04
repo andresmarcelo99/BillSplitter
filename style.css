@@ -72,3 +72,33 @@ form input {
 .final_cost {
   color: rgb(66, 66, 66);
 }
+
+@media screen and (max-width: 900px) {
+  .presentation {
+    flex-direction: column;
+  }
+
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 10px 10px 10px;
+  }
+  .Nav-Link {
+    font-size: 12px;
+    margin: 5px 5px 5px 5px;
+  }
+  .logo {
+    display: none;
+  }
+  .cover img {
+    height: 55vh;
+  }
+}
