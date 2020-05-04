@@ -9,7 +9,7 @@ class Splitter {
   }
 
   splitCost() {
-    if (this.cost.value && this.qty_persons.value) {
+    if (this.cost.value > 0 && this.qty_persons.value > 0) {
       const finalValue =
         this.cost.value / this.qty_persons.value + Number(this.tip.value);
       this.final_cost.innerHTML = `${finalValue.toFixed(1)}`;
