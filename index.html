@@ -18,24 +18,28 @@
       <form class="container">
         <div class="question">
           <i class="fas fa-money-bill-wave"></i>
-          <label> How many? </label>
+          <label> How much? </label>
         </div>
-        <input type="text" placeholder="add cost here" />
+        <input type="text" class="cost" placeholder="add cost here" />
 
         <div class="question">
           <i class="fas fa-users"></i>
           <label> How many? </label>
         </div>
-        <input type="text" placeholder="add the number of people" />
+        <input
+          type="text"
+          class="qtyPersons"
+          placeholder="add the number of people"
+        />
 
         <div class="question">
           <i class="far fa-heart"></i>
           <label> Optional tip: </label>
         </div>
-        <input type="text" placeholder="..." />
+        <input type="text" class="tip" placeholder="..." />
         <div class="billButtons">
-          <button class="split">Split!</button>
-          <button class="reset">Reset</button>
+          <button type="button" class="split">Split!</button>
+          <button type="button" class="reset">Reset</button>
         </div>
         <div class="final_div">
           <label class="final_cost">0</label>
